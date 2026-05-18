@@ -10,7 +10,7 @@ echo   DANG CHAY SERVER
 echo =====================
 
 if exist %MVN_INTERNAL% (
-	call %MVN_INTERNAL% clean complile
+	call %MVN_INTERNAL% clean compile
     call %MVN_INTERNAL% exec:java -Dexec.mainClass="com.mmorpg.server.MainServer"
 ) else (
     echo [LOI] Khong tim thay thu muc maven!
